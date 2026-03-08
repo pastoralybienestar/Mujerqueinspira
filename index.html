@@ -81,6 +81,32 @@
             0% { transform: scale(1); }
             100% { transform: scale(1.1); }
         }
+
+        /* Barra de Scroll Creativa */
+        ::-webkit-scrollbar {
+            width: 14px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f3e8ff; /* Fondo morado muy claro */
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #ec4899, #7e22ce); /* Degradado de rosa a morado */
+            border-radius: 10px;
+            border: 3px solid #f3e8ff; /* Borde del mismo color que el track para dar efecto de margen */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #db2777, #6b21a8); /* Colores más intensos al pasar el mouse */
+        }
+
+        /* Compatibilidad para Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #9333ea #f3e8ff;
+        }
     </style>
 </head>
 <body class="antialiased text-gray-800">
@@ -173,6 +199,18 @@
                 <img src="https://images.unsplash.com/photo-1732834278048-e7e071cd1537?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudiante inspiradora" class="rounded-2xl shadow-lg h-64 w-full object-cover hover:scale-105 transition-transform duration-500">
                 <img src="https://images.unsplash.com/photo-1703785058573-71e0eed54f77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mujer trabajando" class="rounded-2xl shadow-lg h-64 w-full object-cover hover:scale-105 transition-transform duration-500">
                 <img src="https://images.unsplash.com/photo-1664910738063-85588a1c0b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mujer sonriendo" class="rounded-2xl shadow-lg h-64 w-full object-cover hover:scale-105 transition-transform duration-500">
+            </div>
+
+            <!-- Frase Final de Cierre -->
+            <div class="mt-20 mb-8 text-center fade-in-up">
+                <p class="text-2xl md:text-4xl font-bold text-white serif-text drop-shadow-lg italic">
+                    "Sigue iluminando el mundo con tu talento, dedicación y pasión. <br class="hidden md:block"> ¡Gracias por ser parte de nuestra historia!"
+                </p>
+                <div class="mt-6">
+                    <span class="inline-block py-2 px-6 rounded-full bg-pink-500/80 text-white backdrop-blur-md border border-pink-300/50 text-lg font-semibold tracking-wide shadow-[0_0_15px_rgba(236,72,153,0.5)]">
+                        #MujerQueInspiraUCN
+                    </span>
+                </div>
             </div>
 
         </div>
